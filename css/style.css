@@ -50,11 +50,27 @@
     background-color: var(--main-bg-color);
 
     overflow-y: auto;
+
+    position: relative;
 }
 
 #main-content .top-bar {
-    background-color: rgba(0, 0, 0, 0.5);
     height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 30;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#main-content .top-bar .prova {
+
 }
 
 
