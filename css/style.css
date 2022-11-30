@@ -50,10 +50,6 @@
     color: white;
 }
 
-.main-nav ul li:hover {
-    box-shadow: inset 3px 0px 0px 0px var(--accent-color);
-}
-
 .main-nav .img-box,
 .main-nav .label {
     vertical-align: middle;
@@ -95,8 +91,8 @@
 }
 
 .playlist-box ul button {
+    padding: var(--half-space) 0;
     color: var(--gray-element);
-    margin-top: var(--main-space);
 }
 
 
@@ -108,7 +104,19 @@
 }
 
 
+/* HOVER */
+.main-nav ul li:hover {
+    box-shadow: inset 3px 0px 0px 0px var(--accent-color);
+}
 
+#main-section aside button:not(.add-btn):hover,
+#main-section aside button:hover .label {
+    color: white;
+}
+
+.add-btn:hover .add {
+    background-color: white;
+}
 
 /* --- MAIN CONTENT --- */
 #main-section #main-content {
