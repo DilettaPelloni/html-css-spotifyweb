@@ -11,19 +11,28 @@
     --dark-bg-color: #000000;
     --player-bg-color: #282828;
 
-    --gray-element: #6d6d6d;
+    --gray-element: #717171;
+    --accent-color: #adff2f;
 
     --main-space: 1rem;
+    --half-space: 0.5rem;
     --double-space: 2rem;
+    --inner-space: 0.2rem;
+}
+
+/* MARGINI */
+.m-btt-main {
+    margin-bottom: var(--main-space);
 }
 
 /* TESTO */
 * {
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .small {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: var(--gray-element);
 }
 
@@ -35,6 +44,15 @@ h2 {
 /* IMMAGINI */
 img {
     width: 100%;
+}
+
+/* BOTTONI */
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    cursor: pointer;
 }
 
 /* UTILITY */

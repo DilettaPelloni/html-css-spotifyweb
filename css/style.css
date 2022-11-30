@@ -8,25 +8,59 @@
 
 /* --- ASIDE --- */
 #main-section aside {
-    width: 250px;
+    width: 240px;
     min-height: 100%;
+    padding: var(--main-space) 0;
     background-color: var(--dark-bg-color);
 
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
+/* LOGO */
 .logo {
-    background-color: aqua;
-
     flex-grow: 0;
+    padding-left: var(--main-space);
 }
 
+.logo img {
+    width: 70%;
+}
+
+/* MAIN NAV */
 .main-nav {
-    background-color: saddlebrown;
-
     flex-grow: 0;
 }
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav ul li {
+    padding: var(--inner-space) var(--main-space);
+    color: var(--grey-element);
+}
+
+.main-nav ul li .active {
+    color: white;
+}
+
+.main-nav ul li:hover {
+    box-shadow: inset 3px 0px 0px 0px var(--accent-color);
+}
+
+.main-nav .img-box,
+.main-nav .label {
+    vertical-align: middle;
+}
+
+.main-nav .img-box {
+    display: inline-block;
+    width: 25px;
+}
+
+
 
 .playlist-menu {
     background-color: hotpink;
