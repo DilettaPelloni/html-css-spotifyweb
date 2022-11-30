@@ -12,16 +12,42 @@
     min-height: 100%;
     background-color: var(--dark-bg-color);
 
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    background-color: aqua;
+
     flex-grow: 0;
 }
+
+.main-nav {
+    background-color: saddlebrown;
+
+    flex-grow: 0;
+}
+
+.playlist-menu {
+    background-color: hotpink;
+
+    flex-grow: 1;
+}
+
+.aside-footer {
+    background-color: wheat;
+
+    flex-grow: 0;
+}
+
+
 
 
 /* --- MAIN CONTENT --- */
 #main-section #main-content {
     min-height: 100%;
+    width: calc(100% - 250px);
     background-color: var(--main-bg-color);
-    
-    flex-grow: 1;
 
     overflow-y: auto;
 }
@@ -40,4 +66,7 @@
 #player-section {
     height: 100px;
     background-color: var(--player-bg-color);
+
+    position: relative;
+    z-index: 30;
 }
