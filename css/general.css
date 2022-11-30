@@ -12,6 +12,9 @@
     --player-bg-color: #282828;
 
     --gray-element: #6d6d6d;
+
+    --main-space: 1rem;
+    --double-space: 2rem;
 }
 
 /* TESTO */
@@ -19,8 +22,24 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.small {
+    font-size: 0.8em;
+    color: var(--gray-element);
+}
+
+h2 {
+    color: white;
+}
+
+
+/* IMMAGINI */
+img {
+    width: 100%;
+}
+
 /* UTILITY */
 .prova {
     background-color: firebrick;
     padding: 15px;
+    display: inline-block;
 }

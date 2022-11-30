@@ -69,10 +69,47 @@
     align-items: center;
 }
 
-#main-content .top-bar .prova {
-
+#main-content > .container {
+    padding: 0 var(--main-space) var(--main-space);
 }
 
+#main-content .content-menu {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#main-content #recent {
+    background-color: lightcoral;
+}
+
+#main-content #created {
+    background-color: chocolate;
+}
+
+#main-content #popular {
+    background-color: navy;
+}
+
+#main-content .card-box {
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-content .card {
+    width: calc(88% / 6);
+    margin-right: 2%;
+    background-color: sandybrown;
+    text-align: center;
+    margin-bottom: var(--main-space);
+}
+
+#main-content .card .img-box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+}
 
 
 
