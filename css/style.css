@@ -111,15 +111,26 @@
     border-radius: 50%;
 }
 
-
-
-
-
 /* ----- PLAYER SECTION ----- */
 #player-section {
     height: 100px;
     background-color: var(--player-bg-color);
 
+    display: flex;
+    justify-content: space-between;
+
     position: relative;
     z-index: 30;
+}
+
+#player-section .player-left {
+    background-color: darkgoldenrod;
+}
+
+#player-section .player-center {
+    background-color: forestgreen;
+}
+
+#player-section .player-right {
+    background-color: greenyellow;
 }
