@@ -1,7 +1,7 @@
 # html-css-spotifyweb
 
-###Esercizio: Spotify
-###Repo: html-css-spotifyweb
+### Esercizio: Spotify
+### Repo: html-css-spotifyweb
 
 Eccoci arrivati a Spotify Web, la nostra prima web app!
 
