@@ -9,7 +9,7 @@
 /* --- ASIDE --- */
 #main-section aside {
     width: 240px;
-    min-height: 100%;
+    min-height:50px;
     padding: var(--main-space) 0;
     background-color: var(--dark-bg-color);
 
@@ -18,10 +18,15 @@
     text-align: left;
 }
 
+.logo,
+.playlist-menu,
+.aside-footer {
+    padding-left: var(--main-space);
+}
+
 /* LOGO */
 .logo {
     flex-grow: 0;
-    padding-left: var(--main-space);
 }
 
 .logo img {
@@ -39,7 +44,6 @@
 
 .main-nav ul li {
     padding: var(--inner-space) var(--main-space);
-    color: var(--grey-element);
 }
 
 .main-nav ul li .active {
@@ -60,14 +64,43 @@
     width: 25px;
 }
 
-
-
+/* PLAYLIST MENU */
 .playlist-menu {
-    background-color: hotpink;
-
+    /* background-color: hotpink; */
     flex-grow: 1;
 }
 
+.playlist-menu .add-btn .label {
+    font-size: 1.2em;
+}
+
+.playlist-menu .add-btn .add {
+    display: inline-block;
+    margin-right: var(--half-space);
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    font-size: 2rem;
+    background-color: #a3a3a3;
+    vertical-align: middle;
+}
+
+.playlist-box {
+    height: 100%;
+    overflow:auto;
+}
+
+.playlist-box ul {
+    list-style: none;
+}
+
+.playlist-box ul button {
+    color: var(--gray-element);
+    margin-top: var(--main-space);
+}
+
+
+/* ASIDE FOOTER */
 .aside-footer {
     background-color: wheat;
 
