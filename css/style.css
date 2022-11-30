@@ -1,0 +1,43 @@
+/* ----- MAIN SECTION ----- */
+#main-section {
+    height: calc(100vh - 100px);
+    background-color: aqua;
+
+    display: flex;
+}
+
+/* --- ASIDE --- */
+#main-section aside {
+    width: 250px;
+    min-height: 100%;
+    background-color: var(--dark-bg-color);
+
+    flex-grow: 0;
+}
+
+
+/* --- MAIN CONTENT --- */
+#main-section #main-content {
+    min-height: 100%;
+    background-color: var(--main-bg-color);
+    
+    flex-grow: 1;
+
+    overflow-y: auto;
+}
+
+#main-content .top-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+}
+
+
+
+
+
+
+/* ----- PLAYER SECTION ----- */
+#player-section {
+    height: 100px;
+    background-color: var(--player-bg-color);
+}

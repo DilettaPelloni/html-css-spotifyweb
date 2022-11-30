@@ -4,3 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* VARIABILI */
+:root {
+    --main-bg-color: #141922;
+    --dark-bg-color: #000000;
+    --player-bg-color: #282828;
+
+    --gray-element: #6d6d6d;
+}
