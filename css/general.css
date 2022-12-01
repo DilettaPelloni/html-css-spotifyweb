@@ -84,3 +84,19 @@ a.btn {
     padding: 15px;
     display: inline-block;
 }
+
+progress {
+    -webkit-appearance: none;
+    vertical-align:middle;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--gray-element);
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
