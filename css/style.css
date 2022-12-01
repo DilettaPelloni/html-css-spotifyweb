@@ -9,13 +9,9 @@
 /* --- ASIDE --- */
 #main-section aside {
     width: 240px;
-    min-height:50px;
-    padding: var(--main-space) 0;
+    min-height:400px;
+    padding: var(--main-space) var(--main-space) 0 0;
     background-color: var(--dark-bg-color);
-
-    display: flex;
-    flex-direction: column;
-    text-align: left;
 }
 
 .logo,
@@ -24,20 +20,17 @@
     padding-left: var(--main-space);
 }
 
-/* LOGO */
-.logo {
-    flex-grow: 0;
+/* ASIDE MAIN */
+.aside-main {
+    height: calc(100% - 90px);
 }
 
+/* LOGO */
 .logo img {
     width: 70%;
 }
 
 /* MAIN NAV */
-.main-nav {
-    flex-grow: 0;
-}
-
 .main-nav ul {
     list-style: none;
 }
@@ -46,7 +39,11 @@
     padding: var(--inner-space) var(--main-space);
 }
 
-.main-nav ul li .active {
+.main-nav ul .active {
+    box-shadow: inset 3px 0px 0px 0px var(--accent-color);
+}
+
+.main-nav ul .active .label {
     color: white;
 }
 
@@ -61,11 +58,6 @@
 }
 
 /* PLAYLIST MENU */
-.playlist-menu {
-    /* background-color: hotpink; */
-    flex-grow: 1;
-}
-
 .playlist-menu .add-btn .label {
     font-size: 1.2em;
 }
@@ -82,7 +74,6 @@
 }
 
 .playlist-box {
-    height: 100%;
     overflow:auto;
 }
 
@@ -95,20 +86,42 @@
     color: var(--gray-element);
 }
 
-
 /* ASIDE FOOTER */
 .aside-footer {
-    background-color: wheat;
-
-    flex-grow: 0;
+    height: 90px;
+    background-color: var(--dark-bg-color);
+    position: relative;
+    z-index: 10;
 }
 
+.aside-footer a {
+    display: inline-block;
+    padding-top: var(--main-space);
+    text-decoration: none;
+    color: var(--gray-element);
+    font-size: 0.9em;
+}
+
+.aside-footer hr {
+    border-color: var(--gray-element);
+}
+
+.aside-footer .img-box,
+.aside-footer .label {
+    vertical-align: middle;
+}
+
+.aside-footer .img-box {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: var(--inner-space);
+    background-color: var(--gray-element);
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 /* HOVER */
-.main-nav ul li:hover {
-    box-shadow: inset 3px 0px 0px 0px var(--accent-color);
-}
-
 #main-section aside button:not(.add-btn):hover,
 #main-section aside button:hover .label {
     color: white;
@@ -116,6 +129,10 @@
 
 .add-btn:hover .add {
     background-color: white;
+}
+
+.aside-footer a:hover {
+    color: white;
 }
 
 /* --- MAIN CONTENT --- */
@@ -133,7 +150,6 @@
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     
-
     position: sticky;
     top: 0;
     left: 0;
