@@ -40,6 +40,10 @@
     color: var(--gray-element);
 }
 
+.very-small {
+    font-size: 0.7em;
+}
+
 .label {
     color: var(--gray-element);
 }
