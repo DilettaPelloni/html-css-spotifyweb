@@ -28,6 +28,10 @@
     flex-grow: 0;
 }
 
+.logo img[alt='logo-small'] {
+    display: none;
+}
+
 .logo img {
     width: 70%;
 }
@@ -268,7 +272,7 @@
 
 /* PLAYER LEFT */
 #player-section .player-left {
-    /* background-color: darkgoldenrod; */
+    width: 20%;
     padding: var(--main-space);
 
     display: flex;
@@ -349,6 +353,7 @@
 
 .progress-bar-box .time {
     color: white;
+    padding: 0 var(--inner-space);
 }
 
 .progress-bar-box .progress-box {
@@ -363,9 +368,19 @@
 /* PLAYER RIGHT */
 #player-section .player-right {
     padding: var(--half-space);
+    width: 20%;
     color: white;
     display: flex;
     align-items: center;
+}
+
+.player-right .icon-box {
+    width: 40%;
+    text-align: right;
+}
+
+.player-right .progress-box {
+    width: 60%;
 }
 
 .player-right i {
@@ -375,4 +390,5 @@
 .player-right .progress-box progress {
     height: 0.4em;
     display: inline-block;
+    width: 100%;
 }
