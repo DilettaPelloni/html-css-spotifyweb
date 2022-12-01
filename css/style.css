@@ -138,17 +138,17 @@
 /* --- MAIN CONTENT --- */
 #main-section #main-content {
     min-height: 100%;
-    width: calc(100% - 250px);
+    width: calc(100% - 240px);
     background-color: var(--main-bg-color);
 
     overflow-y: auto;
-
-    position: relative;
 }
 
+/* TOP BAR */
 #main-content .top-bar {
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: var(--inner-space);
+    background-color: rgba(0, 0, 0, 0.7);
     
     position: sticky;
     top: 0;
@@ -160,6 +160,7 @@
     align-items: center;
 }
 
+/* CONTENT */
 #main-content > .container {
     padding: 0 var(--main-space) var(--main-space);
 }
