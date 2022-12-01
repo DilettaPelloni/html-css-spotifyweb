@@ -1,17 +1,20 @@
 /* ----- MAIN SECTION ----- */
 #main-section {
     height: calc(100vh - 100px);
-    background-color: aqua;
-
     display: flex;
 }
 
 /* --- ASIDE --- */
 #main-section aside {
     width: 240px;
-    min-height:400px;
+    min-height: 60%;
     padding: var(--main-space) var(--main-space) 0 0;
     background-color: var(--dark-bg-color);
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
 }
 
 .logo,
@@ -20,17 +23,20 @@
     padding-left: var(--main-space);
 }
 
-/* ASIDE MAIN */
-.aside-main {
-    height: calc(100% - 90px);
+/* LOGO */
+.logo {
+    flex-grow: 0;
 }
 
-/* LOGO */
 .logo img {
     width: 70%;
 }
 
 /* MAIN NAV */
+.main-nav {
+    flex-grow: 0;
+}
+
 .main-nav ul {
     list-style: none;
 }
@@ -58,6 +64,10 @@
 }
 
 /* PLAYLIST MENU */
+.playlist-menu {
+    flex-grow: 1;
+}
+
 .playlist-menu .add-btn .label {
     font-size: 1.2em;
 }
@@ -90,8 +100,12 @@
 .aside-footer {
     height: 90px;
     background-color: var(--dark-bg-color);
+
     position: relative;
     z-index: 10;
+
+    flex-grow: 0;
+
 }
 
 .aside-footer a {
@@ -252,9 +266,51 @@
     z-index: 30;
 }
 
+/* PLAYER LEFT */
 #player-section .player-left {
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
+    padding: var(--main-space);
+
+    display: flex;
+    align-items: center;
 }
+
+.player-left .song-box {
+    margin-right: var(--double-space);
+    display: flex;
+}
+
+.player-left .song-box .img-box{
+    width: 50px;
+    margin-right: var(--half-space);
+}
+
+.player-left .song-box .img-box img{
+    display: block;
+}
+
+.player-left .song-box .song-title-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-left .song-box .song-title-box .song-title{
+    color: white;
+}
+
+.player-left .song-box .song-title-box .song-sub-title{
+    color: var(--gray-element);
+    font-size: 0.7em;
+}
+
+.player-left .icon-box i {
+    color: var(--gray-element);
+    margin-right: var(--half-space);
+}
+
+
+
 
 #player-section .player-center {
     background-color: forestgreen;
