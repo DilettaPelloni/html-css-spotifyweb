@@ -36,7 +36,7 @@
 }
 
 .small {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: var(--gray-element);
 }
 
@@ -72,8 +72,6 @@ a.btn {
     font-size: 0.9em;
     text-decoration: none;
     text-transform: uppercase;
-
-
 }
 
 /* UTILITY */

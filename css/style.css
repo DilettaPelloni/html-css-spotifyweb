@@ -165,33 +165,58 @@
     padding: 0 var(--main-space) var(--main-space);
 }
 
+#main-content > .container section {
+    margin-bottom: var(--main-space);
+}
+
+/* CONTENT MENU */
 #main-content .content-menu {
-    background-color: aquamarine;
     text-align: center;
 }
 
-#main-content #recent {
-    background-color: lightcoral;
+#main-content .content-menu ul {
+    list-style: none;
 }
 
-#main-content #created {
-    background-color: chocolate;
+#main-content .content-menu ul li {
+    display: inline-block;
+    padding: var(--main-space);
 }
 
-#main-content #popular {
-    background-color: navy;
+#main-content .content-menu ul li a {
+    padding: var(--inner-space);
+    color: var(--gray-element);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#main-content .content-menu ul li hr {
+    width: 30px;
+    margin: var(--inner-space) auto;
+    border-color: transparent;
+}
+
+#main-content .content-menu ul li hr.active {
+    border-color: var(--accent-color);
 }
 
 #main-content .card-box {
-    background-color: blueviolet;
     display: flex;
     flex-wrap: wrap;
+}
+
+#main-content .section-title {
+    margin-bottom: var(--main-space);
+}
+
+#main-content h2 {
+    margin-bottom: var(--half-space);
+    font-weight: 800;
 }
 
 #main-content .card {
     width: calc(88% / 6);
     margin-right: 2%;
-    background-color: sandybrown;
     text-align: center;
     margin-bottom: var(--main-space);
 }
@@ -202,6 +227,18 @@
     overflow: hidden;
     border-radius: 50%;
 }
+
+#main-content .card .play-title {
+    margin-top: var(--main-space);
+    color: white;
+    font-weight: 800;
+}
+
+#main-content .card .play-subtitle {
+    margin-top: var(--half-space);
+}
+
+
 
 /* ----- PLAYER SECTION ----- */
 #player-section {
