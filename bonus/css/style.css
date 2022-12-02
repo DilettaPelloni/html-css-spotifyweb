@@ -341,7 +341,10 @@
 }
 
 .player-center .progress-bar .progress-value {
-    width: 20%;
+    width: 0%;
+    animation-name: playing-song;
+    animation-duration: 235s;
+    animation-timing-function: linear;
 }
 
 /* PLAYER RIGHT */

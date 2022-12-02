@@ -47,3 +47,12 @@
     background: var(--accent-color);
 }
 
+/* ANIMAZIONE PLAYER */
+@keyframes playing-song {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+  }
