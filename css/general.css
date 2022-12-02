@@ -89,21 +89,38 @@ ul {
 }
 
 /* PROGRESS BAR */
-progress {
-    -webkit-appearance: none;
-    vertical-align:middle;
-}
-
-progress::-webkit-progress-bar {
+.progress-bar {
+    height: 0.4rem;
     background-color: var(--gray-element);
     border-radius: 10px;
-}
 
-progress::-webkit-progress-value {
-    background-color: white;
-    border-radius: 10px;
     position: relative;
 }
+
+.progress-value {
+    height: 0.4rem;
+    background-color: white;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-value::after {
+    content: "";
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: white;
+    border-radius: 50%;
+
+    position: absolute;
+    left: calc(100% - 0.45rem);
+    top: calc(50% - 0.45rem);
+
+    display: none;
+}
+
 
 /* UTILITY */
 .prova {

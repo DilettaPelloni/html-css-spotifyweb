@@ -117,10 +117,14 @@
     overflow-y: auto;
 }
 
+.aside-footer button .label {
+    color: white;
+}
+
 /* TOP BAR */
 #main-content .top-bar {
     height: 100px;
-    padding: var(--inner-space);
+    padding: var(--main-space);
     background-color: rgba(0, 0, 0, 0.7);
     
     position: sticky;
@@ -192,8 +196,35 @@
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
+
+    position: relative;
+}
+
+#main-content #popular .card .img-box {
     border-radius: 50%;
 }
+
+#main-content .card .img-box .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+}
+
+#main-content .card .img-box .overlay > * {
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 #main-content .card .play-title {
     margin-top: var(--main-space);
@@ -290,27 +321,26 @@
 }
 
 /* PROGRESS BAR */
-.progress-bar-box {
+.player-center .progress-bar-box {
     width: 100%;
+    margin-top: var(--half-space);
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.progress-bar-box .time {
+.player-center .progress-bar-box .time {
     color: white;
     padding: 0 var(--inner-space);
 }
 
-/* larghezza scatola con dentro la barra */
-.progress-bar-box .progress-box {
+.player-center .progress-bar {
     width: 90%;
 }
 
-/* dimensioni barra */
-.progress-bar-box .progress-box progress {
-    width: 100%;
-    height: 0.4em;
+.player-center .progress-bar .progress-value {
+    width: 20%;
 }
 
 /* PLAYER RIGHT */
@@ -331,25 +361,15 @@
     margin-right: var(--main-space);
 }
 
-.player-right .progress-box {
+.player-right .progress-bar-box {
     width: 60%;
+    padding: var(--inner-space) 0;
 }
 
-.player-right .progress-box progress {
-    height: 0.4em;
+.player-right .progress-bar {
     width: 100%;
 }
 
-/* HOVER */
-#main-section aside button:not(.add-btn):hover,
-#main-section aside button:hover .label {
-    color: white;
-}
-
-.add-btn:hover .add {
-    background-color: white;
-}
-
-.aside-footer a:hover {
-    color: white;
+.player-right .progress-bar .progress-value {
+    width: 20%;
 }
