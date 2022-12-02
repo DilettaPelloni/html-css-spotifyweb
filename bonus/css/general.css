@@ -1,0 +1,149 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABILI */
+:root {
+    --main-bg-color: #141922;
+    --dark-bg-color: #000000;
+    --player-bg-color: #282828;
+
+    --gray-element: #717171;
+    --accent-color: #adff2f;
+
+    --main-space: 1.2rem;
+    --half-space: 0.6rem;
+    --double-space: 2.4rem;
+    --inner-space: 0.2rem;
+}
+
+/* MARGINI */
+.m-btt-main {
+    margin-bottom: var(--main-space);
+}
+
+.m-btt-half {
+    margin-bottom: var(--half-space);
+}
+
+/* TESTO */
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.small {
+    font-size: 0.8em;
+    color: var(--gray-element);
+}
+
+.very-small {
+    font-size: 0.7em;
+}
+
+.label {
+    color: var(--gray-element);
+}
+
+a {
+    text-decoration: none;
+}
+
+h2,
+h4 {
+    color: white;
+}
+
+
+/* IMMAGINI */
+img {
+    width: 100%;
+}
+
+/* BOTTONI */
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+a.btn {
+    padding: var(--half-space) var(--double-space);
+    border: 0.5px solid white;
+    border-radius: 40px;
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* LISTE */
+
+ul {
+    list-style: none;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+    height: 0.4rem;
+    background-color: var(--gray-element);
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.progress-value {
+    height: 0.4rem;
+    background-color: white;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-value::after {
+    content: "";
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: white;
+    border-radius: 50%;
+
+    position: absolute;
+    left: calc(100% - 0.45rem);
+    top: calc(50% - 0.45rem);
+
+    display: none;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.4em;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--gray-element);
+    border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
+
+
+/* UTILITY */
+.prova {
+    background-color: firebrick;
+    padding: 15px;
+    display: inline-block;
+}
+
+

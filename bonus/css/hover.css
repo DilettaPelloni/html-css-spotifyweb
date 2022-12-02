@@ -1,0 +1,49 @@
+/* CARDS */
+
+#main-content .card:hover .img-box .overlay{
+    display: block;
+}
+
+/* TOP BAR BUTTON*/
+.top-bar .btn:hover {
+    transform:scale(1.1) ;
+}
+
+/* WHITE BUTTONS */
+#main-section aside button:not(.add-btn):hover,
+#main-section aside button:hover .label,
+#main-section aside a:hover .label,
+#main-section #main-content .content-menu li:hover a,
+#player-section .player-left .icon-box i:hover
+ {
+    color: white;
+}
+
+.add-btn:hover .add {
+    background-color: white;
+}
+
+/* PLAYER SECTION */
+
+.player-left .song-box .song-title-box .song-sub-title:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.player-center .button-bar ul li:nth-child(3):hover {
+    transform: scale(1.05);
+}
+
+.progress-bar-box:hover .progress-value {
+    background-color: var(--accent-color);
+}
+
+.progress-bar-box:hover .progress-value::after {
+    display: block;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}
+
