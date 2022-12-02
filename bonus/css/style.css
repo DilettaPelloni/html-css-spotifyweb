@@ -358,7 +358,8 @@
 
 .player-right .icon-box {
     width: 40%;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .player-right i {
