@@ -65,6 +65,7 @@
 
     aside .label,
     aside .playlist-menu,
+    aside .playlist-box,
     aside hr {
         display: none;
     }

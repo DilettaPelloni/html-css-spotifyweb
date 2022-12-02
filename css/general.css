@@ -48,6 +48,10 @@
     color: var(--gray-element);
 }
 
+a {
+    text-decoration: none;
+}
+
 h2,
 h4 {
     color: white;
@@ -78,13 +82,13 @@ a.btn {
     text-transform: uppercase;
 }
 
-/* UTILITY */
-.prova {
-    background-color: firebrick;
-    padding: 15px;
-    display: inline-block;
+/* LISTE */
+
+ul {
+    list-style: none;
 }
 
+/* PROGRESS BAR */
 progress {
     -webkit-appearance: none;
     vertical-align:middle;
@@ -100,3 +104,12 @@ progress::-webkit-progress-value {
     border-radius: 10px;
     position: relative;
 }
+
+/* UTILITY */
+.prova {
+    background-color: firebrick;
+    padding: 15px;
+    display: inline-block;
+}
+
+
