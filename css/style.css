@@ -2,23 +2,24 @@
 #main-section {
     height: calc(100vh - 100px);
     display: flex;
+
+    overflow: hidden;
 }
 
 /* --- ASIDE --- */
 #main-section aside {
     width: 240px;
-    min-height: 60%;
+    min-height: 400px;
     padding: var(--main-space) var(--main-space) 0 0;
     background-color: var(--dark-bg-color);
 
     display: flex;
     flex-direction: column;
-
-    overflow: hidden;
 }
 
 .logo,
 .playlist-menu,
+.playlist-box,
 .aside-footer {
     padding-left: var(--main-space);
 }
@@ -69,7 +70,7 @@
 
 /* PLAYLIST MENU */
 .playlist-menu {
-    flex-grow: 1;
+    flex-grow: 0;
 }
 
 .playlist-menu .add-btn .label {
@@ -88,7 +89,8 @@
 }
 
 .playlist-box {
-    overflow:auto;
+    flex-grow: 1;
+    overflow: auto;
 }
 
 .playlist-box ul {
